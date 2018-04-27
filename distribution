@@ -2,7 +2,7 @@
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install emacs tmux mosh zsh git wget chromium-browser gnome-tweak-tool chrome-gnome-shell -y
+sudo apt-get install emacs tmux curl mosh zsh git wget chromium-browser gnome-tweak-tool chrome-gnome-shell -y
 
 
 # paper_theme
@@ -12,6 +12,8 @@ sudo apt-get install paper-icon-theme
 sudo apt-get install paper-cursor-theme
 sudo apt-get install paper-gtk-theme
 
+# zero_tier()
+curl -s https://install.zerotier.com/ | sudo bash
 
 # spacemacs()
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
@@ -33,11 +35,9 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 ##echo "add control = Control_L Control_R" >> /home/km4sh/.Xmodmap
 
 # fonts()
-wget https://gist.githubusercontent.com/lucasdavila/3875946/raw/1c100cae16a06bef154af0f290d665405b554b3b/install_source_code_pro.sh
-sudo chmod +x install_source_code_pro.sh
-sudo ./install_source_code_pro.sh
-rm -f install_source_code_pro.sh
-
+##source code pro
+curl -L https://gist.githubusercontent.com/lucasdavila/3875946/raw/1c100cae16a06bef154af0f290d665405b554b3b/install_source_code_pro.sh | sudo bash
+##fira code 
 sudo add-apt-repository universe
 sudo apt install fonts-firacode
 
