@@ -15,6 +15,8 @@ sudo apt-get install paper-gtk-theme
 
 # spacemacs()
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+rm -f .spacemacs
+wget https://github.com/mattma9209/km4sh4ubuntu/blob/master/.spacemacs
 emacs -nw &
 
 # Numix_theme()
