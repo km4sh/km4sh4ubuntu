@@ -2,7 +2,7 @@
 
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install emacs mosh zsh git wget chromium-browser gnome-tweak-tool chrome-gnome-shell -y
+sudo apt-get install emacs tmux mosh zsh git wget chromium-browser gnome-tweak-tool chrome-gnome-shell -y
 
 
 # paper_theme
@@ -25,10 +25,10 @@ emacs -nw &
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 # swap_ctrl_caps()
-echo "clear lock" > /home/km4sh/.Xmodmap
-echo "clear control" >> /home/km4sh/.Xmodmap
-echo "keycode 66 = Control_L" >> /home/km4sh/.Xmodmap
-echo "add control = Control_L Control_R" >> /home/km4sh/.Xmodmap
+##echo "clear lock" > /home/km4sh/.Xmodmap
+##echo "clear control" >> /home/km4sh/.Xmodmap
+##echo "keycode 66 = Control_L" >> /home/km4sh/.Xmodmap
+##echo "add control = Control_L Control_R" >> /home/km4sh/.Xmodmap
 
 # fonts()
 wget https://gist.githubusercontent.com/lucasdavila/3875946/raw/1c100cae16a06bef154af0f290d665405b554b3b/install_source_code_pro.sh
